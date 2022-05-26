@@ -1,0 +1,10 @@
+<h1>Exercise entries</h1>
+
+{% for entry in object_list %}
+    <p>
+    	<a href={{ entry.get_absolute_url  }}>{{ entry }}</a>
+	    <a href={{ entry.get_absolute_url  }}/update>Edit</a>
+	    <a href={{ entry.get_absolute_url  }}/delete>Delete</a>
+    </p>
+{% endfor %}
+<a href="/entries/new">Add new entry</a>
