@@ -1,2 +1,2 @@
 # pythonwebbipalvelu
-Haaga-helian kurssin harjoituksia
+Haaga-Helian pythonwebbipalvelu-kurssin harjoituksia
