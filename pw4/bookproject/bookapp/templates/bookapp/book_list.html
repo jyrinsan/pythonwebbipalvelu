@@ -1,0 +1,14 @@
+{% extends "bookapp/base.html" %}
+
+{% block content %}
+	<h1>Books</h1>
+
+	{% for book in object_list %}
+		<p>
+			<a href="{{ book.get_absolute_url }}">{{ book.title }}</a>
+			- <a href="{{ book.get_absolute_url }}/update">Edit</a>
+			<a href="{{ book.get_absolute_url }}/delete">Delete</a>
+		</p>
+	{% endfor %}
+	<a href="/books/new">Add new book</a>
+{% endblock content %}
